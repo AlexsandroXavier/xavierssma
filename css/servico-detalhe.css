@@ -1,0 +1,173 @@
+/* BASE */
+.servico-hero {
+    height: 60vh;
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* GESTÃO DE RESÍDUOS */
+.servico-hero.residuos {
+    background: url('../img/gestaoresiduos.png') center/cover no-repeat;
+}
+
+/* LICENCIAMENTOS */
+.servico-hero.licenciamentos {
+    background: url('../img/regularizacao.png') center/cover no-repeat;
+}
+
+/* ÁGUAS */
+.servico-hero.aguas {
+    background: url('../img/gestaoagua.png') center/cover no-repeat;
+}
+
+/* PROJETOS */
+.servico-hero.projetos {
+    background: url('../img/gestaoambiental.png') center/cover no-repeat;
+}
+
+/* DOCUMENTOS */
+.servico-hero.documentos {
+    background:  url('../img/documentos.png') center/cover no-repeat;
+}
+
+/* LAUDOS */
+.servico-hero.laudos {
+    background: url('../img/laudos.png') center/cover no-repeat;
+}
+
+/* RISCOS */
+.servico-hero.riscos {
+    background: url('../img/gestaoderisco.png') center/cover no-repeat;
+}
+
+/* SAUDE E SEGURANÇA */
+.servico-hero.seguranca {
+    background: url('../img/saudeseguranca.png') center/cover no-repeat;
+}
+
+/* SEÇÕES */
+.servico-info,
+.servico-beneficios,
+.servico-etapas,
+.servico-cta {
+    padding: 60px 0;
+}
+
+/* BENEFÍCIOS */
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.grid-beneficios .card {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.grid-beneficios i {
+    font-size: 30px;
+    color: #0c8e36;
+    margin-bottom: 10px;
+}
+
+.grid-duplo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Estilo das caixas */
+.box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Diferenciar riscos (opcional) */
+.box.riscos {
+    border-left: 5px solid #e74c3c;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .grid-duplo {
+        grid-template-columns: 1fr;
+    }
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.box h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #0c8e36;
+    display: block;
+    margin-top: 5px;
+}
+
+/* ETAPAS */
+.etapas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.etapa {
+    text-align: center;
+}
+
+.etapa span {
+    background: #224899;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* CTA */
+.servico-cta {
+    background: linear-gradient(180deg, #0c8e36, #0a1f44);
+    color: #fff;
+    text-align: center;
+}
+
+.btn-cta {
+    display: inline-block;
+    background: #0c8e36;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background: #0a6f2b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+
+    .grid-beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .etapas {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,72 @@
+/* EQUIPE HERO */
+.equipe-hero {
+    background:  url('../img/equipe2.png') center/cover no-repeat;
+}
+
+.equipe-intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.equipe-intro h2 {
+    margin-bottom: 20px;
+}
+
+.equipe-intro p {
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.grid-equipe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 60px 20px;
+}
+
+.card-equipe {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card-equipe:hover {
+    transform: translateY(-5px);
+}
+
+.card-equipe img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-equipe h3 {
+    margin: 10px 0;
+}
+
+.card-equipe span {
+    display: block;
+    color: #0c8e36;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.crea {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .grid-equipe {
+        grid-template-columns: 1fr;
+    }
+}
