@@ -149,7 +149,7 @@ header.scrolled .menu-toggle {
     position: relative;
     min-height: 100vh;
     min-height: 100svh;
-    background: url('../img/bg.png') center/cover no-repeat;
+    background: url('../img/bg.webp') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
