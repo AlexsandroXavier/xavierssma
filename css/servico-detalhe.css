@@ -54,6 +54,23 @@
     padding: 60px 0;
 }
 
+.breadcrumb {
+    font-size: 13px;
+    color: #777;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.breadcrumb a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
 /* BENEFÍCIOS */
 .grid-beneficios {
     display: grid;

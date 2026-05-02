@@ -434,11 +434,20 @@ header.scrolled .menu-toggle {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* LOGO */
 .footer-logo img {
     height: 50px;
+}
+/*ENDEREÇO*/
+.pre-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* importante pra responsividade */
 }
 
 /* CONTATO */

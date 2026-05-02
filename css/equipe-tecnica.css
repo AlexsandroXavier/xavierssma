@@ -26,6 +26,47 @@
     padding: 60px 20px;
 }
 
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 16px;
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+/* LinkedIn */
+.social-links a:first-child {
+    background-color: #0077b5;
+    color: #fff;
+}
+
+/* WhatsApp */
+.social-links a:last-child {
+    background-color: #25d366;
+    color: #fff;
+}
+
+/* Hover (efeito profissional) */
+.social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    opacity: 0.9;
+}
+
 .card-equipe {
     background: #fff;
     padding: 25px;
