@@ -1,0 +1,178 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* LOGO */
+
+.logo{
+    height: 150px;
+    width: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* TITULO */
+
+h1{
+    color: #224899;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* DESCRIÇÃO */
+
+.description{
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* LINKS */
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 50px;
+}
+
+/* BOTÕES */
+
+.link-button{
+    background: #1f1f1f;
+    color: white;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 1px solid #2d2d2d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+/* HOVER */
+
+.link-button:hover{
+    transform: translateY(-3px);
+    background: #2a2a2a;
+    border-color: #0c8e36;
+}
+
+/* BOTÃO PRINCIPAL */
+
+.destaque{
+    background: #224899;
+    color: #111;
+}
+
+.destaque:hover{
+    background: #368af8;
+}
+
+.destaque-ambiental{
+    background: #0c8e36;
+    color: black;
+}
+
+.destaque-ambiental:hover{
+    background: #c1ff72;
+}
+
+/* SEÇÕES */
+
+.services,
+.diferenciais{
+    margin-bottom: 50px;
+}
+
+/* TITULOS */
+
+h2{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+/* CARDS */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card{
+    background: #1f1f1f;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #2d2d2d;
+    font-weight: bold;
+}
+
+/* DIFERENCIAIS */
+
+.diferenciais ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.diferenciais li{
+    background: #1f1f1f;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+
+footer{
+    color: #aaa;
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 500px){
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+}
